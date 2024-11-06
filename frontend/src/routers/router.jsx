@@ -16,6 +16,7 @@ import ManageBooks from "../pages/dashboard/manageBooks/ManageBooks";
 import AddBook from "../pages/dashboard/addBook/AddBook";
 import UpdateBook from "../pages/dashboard/EditBook/UpdateBook";
 import UserDashboard from "../pages/dashboard/users/UserDashboard";
+import Aboutus from "../pages/About us/Aboutus";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/about",
-            element: <div>About</div>
+            element: <Aboutus />
         },
         {
           path: "/login",
