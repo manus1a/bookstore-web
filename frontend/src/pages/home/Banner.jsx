@@ -15,7 +15,8 @@ const Banner = () => {
 
             <button className='btn-primary'>Subscribe</button>
         </div>
-    
+
+       
     </div>
   )
 }

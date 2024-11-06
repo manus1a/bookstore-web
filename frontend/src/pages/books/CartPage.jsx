@@ -97,9 +97,9 @@ const CartPage = () => {
                     <div className="mt-6">
                         <Link
                             to="/checkout"
-                            className="flex items-center justify-center rounded-md border-transparent px-6 py-3 text-base font-medium relative h-[50px] overflow-hidden border border-indigo-600 bg-white text-indigo-600 shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-indigo-600 hover:before:w-2/4 hover:before:bg-indigo-600 hover:after:w-2/4 hover:after:bg-pink-500"
+                            className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                         >
-                            <span className='relative z-10'>Checkout</span>
+                            Checkout
                         </Link>
                     </div>
                     <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
