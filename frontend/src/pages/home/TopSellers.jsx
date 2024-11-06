@@ -18,13 +18,16 @@ const categories = ["Choose a genre", "Business", "Fiction", "Horror", "Adventur
 const TopSellers = () => {
     
     const [selectedCategory, setSelectedCategory] = useState("Choose a genre");
-
-   const {data: books = []} = useFetchAllBooksQuery();
+    const [books, setBooks] = useState([]);
   
     const filteredBooks = selectedCategory === "Choose a genre" ? books : books.filter(book => book.category === selectedCategory.toLowerCase())
 
+    useEffect(()=>{
+        fetch("books.json").then(res=>res.json()).then((data)=>setBooks(data))
+    }, [])
+
     return (
-        <div className='py-10'>
+        <div className='py-18 '>
             <h2 className='text-3xl font-semibold mb-6'>Top Sellers</h2>
             {/* category filtering */}
             <div className='mb-8 flex items-center'>
