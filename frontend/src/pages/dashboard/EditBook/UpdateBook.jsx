@@ -12,9 +12,10 @@ import getBaseUrl from '../../../utils/baseURL';
 const UpdateBook = () => {
   const { id } = useParams();
   const { data: bookData, isLoading, isError, refetch } = useFetchBookByIdQuery(id);
-  // console.log(bookData)
   const [updateBook] = useUpdateBookMutation();
   const { register, handleSubmit, setValue, reset } = useForm();
+
+  
   useEffect(() => {
     if (bookData) {
       setValue('title', bookData.title);
