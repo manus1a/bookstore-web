@@ -14,7 +14,7 @@ const Footer = () => {
           <ul className="flex flex-col md:flex-row gap-4">
             <li><a href="#home" className="hover:text-primary">Home</a></li>
             <li><a href="#services" className="hover:text-primary">Services</a></li>
-            <li><a href="/about" className="hover:text-primary">About Us</a></li>
+            <li><a href="#about" className="hover:text-primary">About Us</a></li>
             <li><a href="#contact" className="hover:text-primary">Contact</a></li>
           </ul>
         </div>
