@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { HiMiniBars3CenterLeft, HiOutlineHeart, HiOutlineShoppingCart } from "react-icons/hi2";
 import { IoSearchOutline } from "react-icons/io5";
-import { HiOutlineUser, HiHeart } from "react-icons/hi";
+import { HiOutlineUser } from "react-icons/hi";
 
 import avatarImg from "../assets/avatar.png"
 import { useState } from "react";
@@ -28,13 +28,8 @@ const Navbar = () => {
 
     const token = localStorage.getItem('token');
   
-    const [isLiked, setIsLiked] = useState(false);
-    const toggleLike = () => {
-        setIsLiked(prevState => !prevState);
-    };
-
     return (
-        <header className="max-w-screen-2xl mx-auto px-4 py-6 bg-amber-600">
+        <header className="max-w-screen-2xl mx-auto px-4 py-6">
             <nav className="flex justify-between items-center">
                 {/* left side */}
                 <div className="flex items-center md:gap-16 gap-4">
@@ -91,14 +86,14 @@ const Navbar = () => {
                         }
                     </div>
                     
-                    <button className="hidden sm:block" onClick={toggleLike} style={{ color: isLiked ? 'red' : 'black' }}>
-                        {isLiked ? <HiHeart className="size-6" /> : <HiOutlineHeart className="size-6" />}
+                    <button className="hidden sm:block">
+                        <HiOutlineHeart className="size-6" />
                     </button>
 
-                    <Link to="/cart" className="p-1 sm:px-6 px-2 rounded-sm relative flex h-[50px] items-center justify-center overflow-hidden bg-primary text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-500 before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-56">
-                        <HiOutlineShoppingCart className='relative z-10' />
+                    <Link to="/cart" className="bg-primary p-1 sm:px-6 px-2 flex items-center rounded-sm">
+                        <HiOutlineShoppingCart className='' />
                         {
-                            cartItems.length > 0 ?  <span className="text-sm font-semibold sm:ml-1 relative z-10">{cartItems.length}</span> :  <span className="text-sm font-semibold sm:ml-1 relative z-10">0</span>
+                            cartItems.length > 0 ?  <span className="text-sm font-semibold sm:ml-1">{cartItems.length}</span> :  <span className="text-sm font-semibold sm:ml-1">0</span>
                         }
                         
                        
