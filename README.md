@@ -1,16 +1,16 @@
 Full Stack Book Store (MERN) Project
 
->>>Deskripsi Proyek<<<
+<<<Deskripsi Proyek>>>
 
 Ini adalah proyek aplikasi toko buku full stack yang dibangun menggunakan teknologi MERN (MongoDB, Express, React, Node.js). Proyek ini mencakup frontend dan backend yang berfungsi penuh untuk mengelola data buku.
 
->>>Cara Menjalankan Proyek<<<
+<<<Cara Menjalankan Proyek>>>
 
->>>Persiapan Umum<<<
+<<<Persiapan Umum>>>
 Clone atau Ekstrak Folder Proyek:
     - Buka terminal dan navigasikan ke folder proyek.
 
->>>Menjalankan Frontend<<<
+<<<Menjalankan Frontend>>>
 1. Navigasi ke Direktori Frontend:
 
     cd frontend
@@ -34,7 +34,7 @@ Clone atau Ekstrak Folder Proyek:
 
     npm run dev
 
->>>Menjalankan Backend<<<
+<<<Menjalankan Backend>>>
 1. Navigasi ke Direktori Backend:
 
     cd backend
@@ -56,7 +56,7 @@ Clone atau Ekstrak Folder Proyek:
 
     npm run start:dev
 
->>>Teknologi yang Digunakan<<<
+<<<Teknologi yang Digunakan>>>
 - Frontend: React, Vite
 - Backend: Node.js, Express
 - Database: MongoDB
@@ -64,13 +64,13 @@ Clone atau Ekstrak Folder Proyek:
 - State Management: Redux (opsional)
 - Deployment: Vercel (Frontend), Heroku (Backend) atau platform lain sesuai kebutuhan.
 
->>>Fitur<<<
+<<<Fitur>>>
 - Manajemen Buku: Tambah, edit, hapus, dan lihat buku.
 - Otentikasi Pengguna: Daftar, login, dan logout.
 - Dashboard Admin: Kelola buku dan pengguna.
 
->>>Kontribusi<<<
+<<<Kontribusi>>>
 - Jika Anda ingin berkontribusi, silakan fork repository ini, buat branch fitur baru, dan buat pull request. Kami akan senang untuk meninjau perubahan Anda.
 
->>>Lisensi<<<
+<<<Lisensi>>>
 - Proyek ini dilisensikan di bawah MIT License.
