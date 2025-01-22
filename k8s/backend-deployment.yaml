@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-backend
+spec:
+  replicas: 1  # Number of replicas (pods) for backend
+  selector:
+    matchLabels:
+      app: react-backend
+  template:
+    metadata:
+      labels:
+        app: react-backend
+    spec:
+      containers:
+        - name: react-backend
+          image: poolfresz/react-backend:latest  # Docker image for backend
+          ports:
+            - containerPort: 5000  # The port the backend listens on
