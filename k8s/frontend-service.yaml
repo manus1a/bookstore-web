@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-app-service
+spec:
+  type: NodePort
+  ports:
+    - nodePort: 30000
+      port: 5173       # The port the service exposes
+      targetPort: 5173 # The container's port (matches containerPort from Deployment)
+  selector:
+    app: react-app
